@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <!-- TweenMax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/year.js"></script>
+    <script src="js/test.js"></script>
+    <link href="css/year.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/test.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- mbbox -->
+    <div class="mbbox">
+      <div class="menubar">
+        <div class="barinner">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div class="box1 box">
+        <div class="title">
+          <p>CHROMA<span></span></p>
+          <p>물체가 빛을 받을 때 빛의 파장에 따라 나타나는 특유한 빛</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="image">
+          <p class="on"></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="movetxt">
+          <p>CHROMA is a site that recommends colors</p>
+          <p>CHROMA is a site that recommends colors</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="image">
+          <p class="on"></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="inner">
+        <h1>
+          <a href="index.html"><img src="img/logo_b.png" /></a>
+        </h1>
+        <ul>
+          <li>
+            <a href="thisyear.html">TREND<span></span></a>
+          </li>
+          <li>
+            <a href="recommend.html">RECOMMEND<span></span></a>
+          </li>
+          <!-- <li>
+            <a href="palette.html">PALETTE <span></span></a>
+          </li> -->
+          <li>
+            <a href="brand.html">BRAND<span></span></a>
+          </li>
+        </ul>
+        <div class="menubar">
+          <div class="barinner">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="visual" class="move">
+      <div class="wrap">
+        <div class="inner">
+          <div class="text">
+            <h2>
+              <span>C</span>
+              <span>O</span>
+              <span>L</span>
+              <span>O</span>
+              <span>R</span>
+              <span>:</span>
+              <span></span>
+            </h2>
+            <p>
+              Chroma™ TrandColor는 색상 디자인 페이지에서 수집한
+              <br />
+              빅데이터 기반으로 만들어진 색상 추천 사이트입니다.
+              <br />
+              <br />
+              TrandColor 페이지에서는 사용자에게 과거,현재, 그리고
+              <br />
+              수집된 데이터 기반 '앞으로 있을 미래' 의 트렌드컬러를 제공합니다.
+            </p>
+          </div>
+          <div class="logo">
+            <img src="img/year/logo.png" />
+          </div>
+        </div>
+      </div>
+      <div class="visual-video" data-type="video">
+        <video muted loop autoplay>
+          <source src="video/visual_01.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <!-- con1 -->
+    <div id="con1" class="move">
+      <div class="left">
+        <div class="text">
+          <h2 class="gray">2024</h2>
+          <h2 class="title">COLOR TRENDS</h2>
+          <h2 class="gray">PALETTE</h2>
+          <div style="margin-bottom: 5px; margin-top: 30px; overflow: hidden">
+            <p class="black">유명브랜드가 선정한</p>
+            <p class="black">올해의 트렌드 컬러를 지금 만나보세요.</p>
+          </div>
+
+          <div class="inform">*색상을 클릭하여 색상값을 복사해보세요</div>
+        </div>
+
+        <div class="button_wrap">
+          <div class="buttonC buttonAll">
+            <p>ALL</p>
+            <div class="move_on">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="buttonC buttonF" style="text-align: left">
+            <p>벤자민무어</p>
+            <div class="move_on">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="buttonC buttonS">
+            <p>팬톤</p>
+            <div class="move_on">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="buttonC buttonT">
+            <p>셔윈 윌리엄스</p>
+            <div class="move_on">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="none">
+          <img src="img/year/logo_black.png" />
+          <h2>원하는 브랜드컬러를 체크해주세요!</h2>
+        </div>
+        <div class="inner">
+          <div class="scroll_box">
+            <ul>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>2008-30</p>
+                  <p>Raspberry Blush</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>052</p>
+                  <p>Conch Shell</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>2174-20</p>
+                  <p>Cinnamon</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>AF-180</p>
+                  <p>Wenge</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>2150-30</p>
+                  <p>Savannah Green</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>1444</p>
+                  <p>New Age</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>2067-20</p>
+                  <p>Starry Night Blue</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>2053-30</p>
+                  <p>North Sea Green</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>AF-50</p>
+                  <p>Etiquette</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>OC-57</p>
+                  <p>white Heron</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>OC-52</p>
+                  <p>Gray Owl</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Benjamin Moore</h3>
+
+                  <p>2133-10</p>
+                  <p>Onyx</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>16-1544</p>
+                  <p>Persimmon</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>15-1624</p>
+                  <p>Conch Shell</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>18-1664</p>
+                  <p>Fiery Red</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>19-1337</p>
+                  <p>Fired Brick</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>13-0535</p>
+                  <p>Sharp Green</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>14-3921</p>
+                  <p>Lacecap Hydrangea</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>14-0957</p>
+                  <p>Spectra Yellow</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>16-0847</p>
+                  <p>Olive Oil</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>19-3336</p>
+                  <p>Sparkling Grape</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>16-4535</p>
+                  <p>Blue Atoll</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>15-1216</p>
+                  <p>Pale Khaki</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>19-0414</p>
+                  <p>Forest Night</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>13-4108</p>
+                  <p>Nimbus Cloud</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>12-0703</p>
+                  <p>Seedpearl</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>PANTONE</h3>
+
+                  <p>18-0202</p>
+                  <p>Lava Smoke</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW6339</p>
+                  <p>Pesimmon</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW6141</p>
+                  <p>Softer Tan</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW6680</p>
+                  <p>Friendly Yellow</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW7009</p>
+                  <p>Pearly White</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW9138</p>
+                  <p>Stardew</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW6034</p>
+                  <p>Dark Auburn</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW7076</p>
+                  <p>Cyberspace</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW9088</p>
+                  <p>Utaupeia</p>
+                </div>
+              </li>
+              <li>
+                <div class="white_con">
+                  <div class="color_box">
+                    <img src="img/icon/copy.png" />
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      class="goo"
+                    >
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="10"
+                            result="blur"
+                          />
+                          <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo"
+                          />
+                          <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                    <span class="button--bubble__container">
+                      <a href="#campaign" class="button button--bubble"> </a>
+                      <span class="button--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="button effect-button"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                      </span>
+                    </span>
+                  </div>
+
+                  <h3>Sherwin-williams</h3>
+
+                  <p>HGSW2024</p>
+                  <p>Renew Blue</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="con2" class="move">
+      <div class="con2_inner">
+        <ul class="color_board">
+          <li>
+            <div class="color_ani"></div>
+            <div class="image">
+              <img src="img/con3_1.png" />
+            </div>
+          </li>
+          <li>
+            <div class="color_ani"></div>
+            <div class="image">
+              <img src="img/con3_2.png" />
+            </div>
+          </li>
+          <li>
+            <div class="color_ani"></div>
+            <div class="image">
+              <img src="img/con3_3.png" />
+            </div>
+          </li>
+          <li>
+            <div class="color_ani"></div>
+            <div class="image">
+              <img src="img/con3_4.png" />
+            </div>
+          </li>
+        </ul>
+        <div class="text_wrap">
+          <h2>2024 BEST COLORS</h2>
+          <ul class="color_boxy">
+            <li>
+              <p>#6b3c3b</p>
+            </li>
+            <li>
+              <p>#ae9984</p>
+            </li>
+            <li>
+              <p>#a4b497</p>
+            </li>
+            <li>
+              <p>#855130</p>
+            </li>
+          </ul>
+
+          <p class="text">
+            <span class="title">2024의 키워드는 '차분함'입니다.</span>
+            <br />
+            <br />
+            <span>레트로와 자연의 조합</span> : 색상의 전반적인 느낌은 레트로
+            감성과 현대적인 자연적 분위기를 조합하는 느낌을 줄 수 있습니다.
+            <br />
+            <br />
+            <span>따뜻하고 아늑한 분위기</span> : 따뜻한 브라운과 레드 톤을
+            가지고 있으며, 이러한 톤은 따뜻하고 아늑한 분위기를 창출할 수
+            있습니다.
+            <br />
+            <br />
+            <span>미니멀리즘과 현대적인 감각</span> : 중립적이고 현대적인 느낌을
+            강조하며, 미니멀리스트 디자인에 어울립니다.
+            <br />
+            <br />
+            <span>톤다운된 따뜻함</span> : 톤다운된 따뜻한 색감의 느낌,
+            현대적이면서 고요한 느낌을 전달할 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="con3" class="move">
+      <div id="inner">
+        <div class="title">
+          <h2>2025 Trend Colors</h2>
+          <p class="subText">2025 트렌드 컬러</p>
+        </div>
+        <ul class="color_wrap">
+          <li>
+            <div class="trend_color"></div>
+            <p>WAVE CREST BLUE</p>
+            <p>#5870e7</p>
+          </li>
+          <li>
+            <div class="trend_color"></div>
+            <p>ABYSSAL NIGHT</p>
+            <p>#2b0769</p>
+          </li>
+          <li>
+            <div class="trend_color"></div>
+            <p>PURE ROSE</p>
+            <p>#ffd0ee</p>
+          </li>
+        </ul>
+        <p class="wee">*색상을 클릭해 색상코드를 복사하세요</p>
+      </div>
+    </div>
+
+    <!-- <div id="remote">
+      <ul>
+        <li>
+          <a href="#1">TREND</a>
+        </li>
+        <li>
+          <a href="#1">BEST</a>
+        </li>
+        <li>
+          <a href="#1">PALETTE</a>
+        </li>
+        <li>
+          <a href="#1">COLOR</a>
+        </li>
+      </ul>
+    </div> -->
+
+    <footer id="footer" class="scrollMove6 move">
+      <!-- <img src="img/bg1.jpg" /> -->
+      <div class="inner">
+        <div class="left">
+          <div>
+            <img src="img/logo.png" />
+            <p>
+              모든 소스는 수익이 발생하지 않는
+              <br />비영리적인 목적으로 사용했습니다
+            </p>
+          </div>
+        </div>
+        <ul class="right">
+          <li>
+            <h4>Image / Video</h4>
+            <span class="line"></span>
+            <p>
+              <span class="dot"></span>
+              <a
+                href="https://youtube.com/watch?v=ICxC5ekWnUc&si=nt_zdiv9ueT3_DRa"
+              >
+                Macro Room (YouTube)
+              </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://www.youtube.com/watch?v=SC1yU97-m6s">
+                LEON (YouTube)
+              </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a
+                href="https://www.shinhanart.com/kr/product/product_list.php?part1_idx=84"
+              >
+                Shinhanart.com
+              </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://www.pantone.kr/"> Pantone.com </a>
+            </p>
+
+            <p>
+              <span class="dot"></span>
+              <a href="https://www.gucci.com/kr/ko/"> Gucci.com </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://www.thombrowne.com/"> Thombrowne.com </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://www.balenciaga.com"> Balenciaga.com </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://kr.louisvuitton.com/"> Louisvuitton.com </a>
+            </p>
+          </li>
+          <li>
+            <h4>Reference</h4>
+            <span class="line"></span>
+            <p>
+              <span class="dot"></span>
+              <a href="https://www.webdesignrankings.com/resources/lolcolors/">
+                lolcolors.com
+              </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://colorhunt.co/"> colorhunt.com </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://colordrop.io/"> colordrop.com </a>
+            </p>
+            <p>
+              <span class="dot"></span>
+              <a href="https://color.adobe.com/ko/create/color-wheel">
+                color.adobe.com
+              </a>
+            </p>
+          </li>
+          <li>
+            <div class="mgbottom">
+              <h4>Font</h4>
+              <span class="line"></span>
+              <p>
+                <span class="dot"></span>
+                <a href="https://noonnu.cc/font_page/694">Pretendard</a>
+              </p>
+              <p>
+                <span class="dot"></span>
+                <a href=" https://noonnu.cc/font_page/738"> SBAggroB </a>
+              </p>
+            </div>
+            <div>
+              <h4>Code Plug-In</h4>
+              <span class="line"></span>
+              <p>
+                <span class="dot"></span>
+                <a href="https://codepen.io/Grsmto/pen/RPQPPB">Button Effect</a>
+              </p>
+              <p>
+                <span class="dot"></span>
+                <a
+                  href="https://codyhouse.co/demo/ink-transition-effect/index.html"
+                  >Codyhouse Effect</a
+                >
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
