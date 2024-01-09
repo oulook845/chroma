@@ -1,0 +1,362 @@
+/* header */
+#header {
+  width: 100%;
+  max-width: 1400px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 97;
+
+  /* background: #ccc; */
+  /* border: 1px solid #000; */
+}
+#header {
+  backdrop-filter: blur(5px);
+  /* background: rgba(255, 255, 255, 0.3); */
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+#header.on {
+  transform: translateY(-100%);
+}
+#header .inner {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* border: 1px solid #000; */
+}
+
+#header h1 {
+  width: 50px;
+}
+#header h1 img {
+  width: 100%;
+  display: block;
+  filter: invert(1);
+}
+#header ul {
+  display: flex;
+  gap: 40px;
+}
+#header ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+#header ul li a span {
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  color: #fff;
+  display: block;
+  transition: 0.5s;
+}
+#header ul li a:hover span {
+  width: 100%;
+}
+#header ul li a span.on {
+  width: 100%;
+}
+#header .menubar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .menubar .barinner {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+#header .menubar .barinner p {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: 0.5s;
+  margin: 0px;
+}
+
+#header .barinner.on p:nth-of-type(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+#header .barinner.on p:nth-of-type(2) {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+#header .barinner.on p:nth-of-type(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-225deg);
+}
+#header .menubar p:nth-of-type(1) {
+  top: 0%;
+  left: 0%;
+}
+#header .menubar p:nth-of-type(2) {
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+#header .menubar p:nth-of-type(3) {
+  bottom: 0%;
+  left: 0%;
+}
+
+/* mbbox */
+.mbbox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: -100%;
+  /* top: 0; */
+  left: 0;
+  /* background: #000; */
+  z-index: 99;
+}
+.mbbox.on > div {
+  transform: translateY(100%);
+}
+
+/* 닫기 */
+.mbbox .menubar {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+  z-index: 100;
+  cursor: pointer;
+}
+.mbbox.on .menubar {
+  top: 0px;
+}
+.mbbox .menubar .barinner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+}
+.mbbox .menubar p {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: 0s;
+  transition-delay: 0s;
+  opacity: 0;
+}
+.mbbox.on .menubar p:nth-of-type(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: 1s;
+  transition-delay: 1s;
+  opacity: 1;
+}
+.mbbox.on .menubar p:nth-of-type(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 1s;
+  transition-delay: 1s;
+  opacity: 1;
+}
+
+/* 4등분 컨텐츠 */
+.mbbox > .box {
+  width: 25%;
+  height: 100%;
+  background: #000;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: center;
+  transition: 0.5s;
+  overflow: hidden;
+
+  /* border-right: 1px solid #fff; */
+}
+.mbbox > div p {
+  color: #fff;
+  font-size: 100px;
+  position: relative;
+  transform: translateX(0%);
+
+  user-select: none;
+}
+.mbbox .box {
+  display: flex;
+  justify-content: center;
+}
+
+.mbbox .title {
+  margin: 120px;
+  /* margin: -100px auto; */
+  overflow: hidden;
+}
+.mbbox .title p:nth-of-type(1) {
+  transition: 1s;
+  transition-delay: 1s;
+  display: inline-block;
+  transform: translateX(-200%);
+}
+.mbbox .title p:nth-of-type(2) {
+  transition: 1.2s;
+  transition-delay: 1s;
+  transform: translateX(-200%);
+}
+.mbbox .title.on p {
+  transform: translateX(0%);
+}
+.mbbox .title p:nth-of-type(1) {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+.mbbox .title p:nth-of-type(1) span {
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+.mbbox .title p:nth-of-type(1):hover span {
+  width: 100%;
+}
+
+.mbbox .title p:nth-of-type(2) {
+  font-size: 20px;
+  line-height: 35px;
+  transition-delay: 1.3s;
+}
+
+/* box2 */
+.mbbox > .box2 {
+  transition-delay: 0.2s !important;
+}
+.mbbox .box2 .image {
+  width: 400%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* display: flex; */
+}
+.mbbox .box2 .image p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+}
+.mbbox .box2 p:nth-of-type(1) {
+  background: url(../img/brand_louisvuitton2.jpg) no-repeat top / cover;
+}
+.mbbox .box2 p:nth-of-type(2) {
+  background: url(../img/brand_gucci5.jpg) no-repeat center / cover;
+}
+.mbbox .box2 p:nth-of-type(3) {
+  background: url(../img/brand_thombrowne5.jpg) no-repeat top / cover;
+}
+.mbbox .box2 p:nth-of-type(4) {
+  background: url(../img/brand_balenciaga6.jpg) no-repeat top / cover;
+}
+.mbbox .box2 p {
+  transform: translateX(-100%);
+}
+.mbbox .box2 p.on {
+  transform: translateX(0%);
+}
+
+/* box3 */
+.mbbox .box3 {
+  transition-delay: 0.3s !important;
+}
+.mbbox .movetxt {
+  width: 2800px;
+  display: flex;
+  text-align: center;
+  align-items: end;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  transform: translateX(0%);
+  z-index: 100;
+  transition-delay: 0s;
+  animation: movetxt 10s infinite linear;
+}
+
+@keyframes movetxt {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.mbbox .movetxt p {
+  width: calc(100% / 2);
+  font-size: 70px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* box4 */
+.mbbox .box4 {
+  transition-delay: 0.4s !important;
+  background-position: center;
+  background-size: cover;
+}
+.mbbox .box4 p:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  background: url(../img/brand_louisvuitton6.jpg) no-repeat center / cover;
+}
+.mbbox .box4 p:nth-of-type(2) {
+  background: url(../img/brand_gucci6.jpg) no-repeat top / cover;
+}
+.mbbox .box4 p:nth-of-type(3) {
+  background: url(../img/brand_thombrowne6.jpg) no-repeat top / cover;
+}
+.mbbox .box4 p:nth-of-type(4) {
+  background: url(../img/brand_balenciaga4.webp) no-repeat top / cover;
+}
+
+.mbbox .box4 .image {
+  width: 400%;
+  height: 100%;
+  position: relative;
+}
+.mbbox .box4 .image p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+}
+.mbbox .box4 p {
+  transform: translateX(-100%);
+}
+.mbbox .box4 p.on {
+  transform: translateX(0%);
+}

@@ -1,0 +1,931 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Pretendard-Regular";
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.siteLink {
+  color: #fff;
+}
+.siteLink:hover {
+  text-decoration: underline;
+}
+.colorbox {
+  overflow: hidden;
+}
+.colorbox li {
+  transform: translateY(100%);
+  /* display: inline-block; */
+}
+
+.colorbox li:hover {
+  border: 5px solid #fff;
+  transition: 0s !important;
+}
+
+.right h2,
+.right p {
+  user-select: none;
+}
+
+#visual,
+#con1,
+#con2,
+#con3,
+#con4 {
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+
+/* visaul */
+
+#visual {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#visual .inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.visual-video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visual-video video {
+  height: 140%;
+  object-fit: cover;
+  /* width: 100%; */
+  /* transform: translateY(-50px); */
+}
+#visual .blur {
+  width: 80vw;
+  height: 80vw;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(40%, -50%);
+  border-radius: 50%;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  background: #000000a8;
+
+  transition: 1s;
+  /* animation: circleM 2s infinite ease-in-out; */
+}
+/* #visual .blur:hover {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+  border-color: transparent;
+  transform: translate(0%, -50%);
+} */
+#visual .blur.on {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+  border-color: transparent;
+  transform: translate(0%, -50%);
+}
+
+@keyframes circleM {
+  0% {
+    transform: translateY(-0%);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(-0%);
+  }
+}
+#visual .logo {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.2;
+
+  transition: 1s;
+}
+/* #visual .blur:hover .logo {
+  transform: translate(0%, -50%);
+} */
+#visual .blur.on .logo {
+  transform: translate(0%, -50%);
+}
+
+#visual .blur .circle {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+#visual .text {
+  color: #fff;
+
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  /* transform: translateX(-50%); */
+  /* transform: translate(-50%,-50%); */
+
+  transition: 1s;
+}
+#visual .blur.on .text {
+  top: 40%;
+  left: 15%;
+  /* text-align: center; */
+  /* transform: translateX(-35%); */
+}
+#visual .inner h2 {
+  font-size: 70px;
+  letter-spacing: -2px;
+  font-family: "SBAggroB";
+  margin-left: -10px;
+  display: block;
+
+  overflow: hidden;
+  user-select: none;
+}
+#visual .inner h2 span {
+  transform: translateY(100%);
+  display: inline-block;
+
+  opacity: 0%;
+}
+#visual .text p {
+  font-size: 22px !important;
+  margin-top: 20px;
+  line-height: 40px;
+  user-select: none;
+}
+#visual .inner p {
+  color: white;
+  font-size: 20px;
+  animation: goUp 1s forwards;
+}
+@keyframes goUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+/* con1 */
+#con1 {
+  background: #fdc97a;
+}
+#con1 .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* con1 left */
+#con1 .left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+#con1 .imgwrap {
+  width: 0px;
+  height: 0px;
+  /* background: #000; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transition: 0.4s ease-in-out;
+  /* transform: translate(-50%, -50%); */
+}
+
+#con1 .left.on .img1 {
+  width: 24%;
+  height: 34%;
+
+  top: 5%;
+  left: 5%;
+
+  border-radius: 50px 0px 0px 0px;
+  background: url(../img/brand_gucci1.jpg) no-repeat center / cover;
+}
+#con1 .left.on .img2 {
+  width: 37%;
+  height: 42%;
+
+  top: 5%;
+  left: 30%;
+
+  background: url(../img/brand_gucci2.jpg) no-repeat center / cover;
+}
+#con1 .left.on .img3 {
+  width: 27%;
+  height: 86%;
+
+  top: 5%;
+  left: 68%;
+
+  border-radius: 0px 50px 50px 0px;
+  background: url(../img/brand_gucci3.jpg) no-repeat center / cover;
+}
+#con1 .left.on .img4 {
+  width: 37%;
+  height: 43%;
+
+  top: 48%;
+  left: 30%;
+
+  background: url(../img/brand_gucci4.jpg) no-repeat center / cover;
+}
+#con1 .left.on .img5 {
+  width: 24%;
+  height: 51%;
+
+  top: 40%;
+  left: 5%;
+
+  border-radius: 0px 0px 0px 50px;
+  background: url(../img/brand_gucci5.jpg) no-repeat center / cover;
+}
+
+/* con1 right */
+#con1 .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+
+  position: relative;
+}
+#con1 .txt {
+  width: 70%;
+  /* height: 50%; */
+
+  position: absolute;
+  top: 10%;
+}
+#con1 h2 {
+  color: #724100;
+
+  font-family: "SBAggroB";
+  font-size: 40px;
+  overflow: hidden;
+
+  margin-bottom: 20px;
+
+  transition-delay: 0.5s;
+  /* display: block; */
+}
+#con1 h2 span {
+  transform: translateY(100%);
+  display: block;
+  transition: 1s;
+  opacity: 0;
+}
+#con1 .right.on h2 span {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+#con1 .line {
+  width: 0%;
+  height: 3px;
+  background: #724100;
+  display: block;
+
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+#con1 .right.on .line {
+  width: 100%;
+}
+
+#con1 p {
+  color: #442b0d;
+  font-size: 20px;
+  line-height: 30px;
+
+  margin-top: 50px;
+  padding: 0px 30px;
+
+  overflow: hidden;
+}
+#con1 .right p span {
+  transition: 0.8s;
+  transform: translateY(100%);
+  opacity: 0;
+  display: block;
+}
+#con1 .right.on p span {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* colorbox */
+#con1 ul {
+  position: absolute;
+  bottom: 15%;
+  padding: 0px 30px;
+  display: flex;
+  gap: 1vw;
+}
+#con1 ul li {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 1vw;
+}
+#con1 .box1 {
+  background: #e09b32;
+}
+#con1 .box2 {
+  background: #ad7624;
+}
+#con1 .box3 {
+  background: #442b0d;
+}
+#con1 .box4 {
+  background: #b4a626;
+}
+
+/* con2 */
+#con2 {
+  background: #060924;
+}
+#con2 .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* con2 left */
+#con2 .left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+
+  overflow: hidden;
+}
+#con2 .imgwrap {
+  width: 0px;
+  height: 0px;
+  /* background: #000; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transition: 0.4s ease-in-out;
+  /* transform: translate(-50%, -50%); */
+}
+#con2 .left.on .img1 {
+  width: 34%;
+  height: 33.5%;
+
+  top: 5%;
+  left: 5%;
+
+  border-radius: 50px 0px 0px 0px;
+  background: url(../img/brand_balenciaga2.jpg) no-repeat center / cover;
+}
+#con2 .left.on .img2 {
+  width: 55%;
+  height: 53.5%;
+
+  top: 5%;
+  left: 40%;
+
+  border-radius: 0px 50px 0px 0px;
+  background: url(../img/brand_balenciaga3.jpg) no-repeat center / cover;
+}
+#con2 .left.on .img3 {
+  width: 34%;
+  height: 51%;
+
+  top: 40%;
+  left: 5%;
+
+  border-radius: 0px 0px 0px 50px;
+  background: url(../img/brand_balenciaga1.jpg) no-repeat center / cover;
+}
+#con2 .left.on .img4 {
+  width: 55%;
+  height: 31%;
+
+  top: 60%;
+  left: 40%;
+
+  border-radius: 0px 0px 50px 0px;
+  background: url(../img/brand_balenciaga5.jpg) no-repeat top / cover;
+}
+/* #con2 .left.on .img5 {
+  width: 22%;
+  height: 51%;
+
+  top: 40%;
+  left: 5%;
+
+  border-radius: 0px 0px 0px 50px;
+  background: url(../img/brand_balenciaga3.jpg) no-repeat center / cover;
+} */
+
+/* con2 right */
+#con2 .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+
+  position: relative;
+}
+#con2 .txt {
+  width: 70%;
+  /* height: 50%; */
+
+  position: absolute;
+  top: 10%;
+}
+#con2 h2 {
+  color: #c7cbff;
+
+  font-family: "SBAggroB";
+  font-size: 40px;
+  overflow: hidden;
+
+  margin-bottom: 20px;
+
+  transition-delay: 0.5s;
+}
+#con2 h2 span {
+  transform: translateY(100%);
+  display: block;
+  transition: 1s;
+  opacity: 0;
+}
+#con2 .right.on h2 span {
+  transform: translateY(0%);
+  opacity: 1;
+}
+#con2 .line {
+  width: 0%;
+  height: 3px;
+  background: #c7cbff;
+  display: block;
+
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+#con2 .right.on .line {
+  width: 100%;
+}
+
+#con2 p {
+  color: #b4b6da;
+  font-size: 20px;
+  line-height: 30px;
+
+  margin-top: 50px;
+  padding: 0px 30px;
+}
+#con2 .right p span {
+  transition: 0.8s;
+  transform: translateY(100%);
+  opacity: 0;
+  display: block;
+}
+#con2 .right.on p span {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* colorbox */
+#con2 ul {
+  position: absolute;
+  bottom: 15%;
+  padding: 0px 30px;
+  display: flex;
+  gap: 1vw;
+}
+#con2 ul li {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 1vw;
+}
+#con2 .box1 {
+  background: #b0b3f8;
+}
+#con2 .box2 {
+  background: #3f4399;
+}
+#con2 .box3 {
+  background: #161a58;
+}
+#con2 .box4 {
+  background: #198d83;
+}
+
+/* con3 */
+#con3 {
+  background: #b3b3b3;
+}
+#con3 .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* con3 left */
+#con3 .left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+#con3 .imgwrap {
+  width: 0px;
+  height: 0px;
+  /* background: #000; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transition: 0.4s ease-in-out;
+  /* transform: translate(-50%, -50%); */
+}
+
+#con3 .left.on .img1 {
+  width: 60.2%;
+  height: 45%;
+
+  top: 5%;
+  left: 5%;
+
+  border-radius: 50px 0px 0px 0px;
+  background: url(../img/brand_thombrowne2.jpeg) no-repeat top / cover;
+}
+#con3 .left.on .img2 {
+  width: 29%;
+  height: 45%;
+
+  top: 5%;
+  left: 66%;
+
+  border-radius: 0px 50px 0px 0px;
+  background: url(../img/brand_thombrowne1.jpg) no-repeat left / cover;
+}
+/* #con3 .left.on .img3 {
+  width: 30%;
+  height: 44%;
+
+  top: 5%;
+  left: 68%;
+
+  border-radius: 0px 50px 0px 0px;
+  background: url(../img/brand_gucci3.jpg) no-repeat center / cover;
+} */
+#con3 .left.on .img4 {
+  width: 90%;
+  height: 40%;
+
+  top: 51%;
+  left: 5%;
+
+  border-radius: 0px 0px 50px 50px;
+  background: url(https://www.thombrowne.com/BWStaticContent/26000/d8f8f8dc-5351-4702-baa1-147f3daba6b1_book-desktop.jpg)
+    no-repeat center / cover;
+}
+/* #con3 .left.on .img5 {
+  width: 22%;
+  height: 51%;
+
+  top: 40%;
+  left: 5%;
+
+  border-radius: 0px 0px 0px 50px;
+  background: url(../img/brand_gucci5.jpg) no-repeat center / cover;
+} */
+
+/* con3 right */
+#con3 .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+
+  position: relative;
+}
+#con3 .txt {
+  width: 70%;
+  /* height: 50%; */
+
+  position: absolute;
+  top: 10%;
+}
+#con3 h2 {
+  color: #223170;
+
+  font-family: "SBAggroB";
+  font-size: 40px;
+  overflow: hidden;
+
+  margin-bottom: 20px;
+
+  transition-delay: 0.5s;
+}
+#con3 h2 span {
+  transform: translateY(100%);
+  display: block;
+  transition: 1s;
+  opacity: 0;
+}
+#con3 .right.on h2 span {
+  transform: translateY(0%);
+  opacity: 1;
+}
+#con3 .line {
+  width: 0%;
+  height: 3px;
+
+  display: block;
+
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+#con3 .line:nth-of-type(1) {
+  background: #df3737;
+}
+#con3 .line:nth-of-type(2) {
+  background: #223170;
+}
+#con3 .right.on .line {
+  width: 100%;
+}
+
+#con3 p {
+  color: #212c5e;
+  font-size: 20px;
+  line-height: 30px;
+
+  margin-top: 50px;
+  padding: 0px 30px;
+}
+#con3 .right p span {
+  transition: 0.8s;
+  transform: translateY(100%);
+  opacity: 0;
+  display: block;
+}
+#con3 .right.on p span {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* colorbox */
+#con3 ul {
+  position: absolute;
+  bottom: 15%;
+  padding: 0px 30px;
+  display: flex;
+  gap: 1vw;
+}
+#con3 ul li {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 1vw;
+}
+#con3 .box1 {
+  background: #d2d5f7;
+}
+#con3 .box2 {
+  background: #9595a3;
+}
+#con3 .box3 {
+  background: #2a2f74;
+}
+#con3 .box4 {
+  background: #da3939;
+}
+
+/* con4 */
+#con4 {
+  background: #3d2107;
+}
+#con4 .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* con4 left */
+#con4 .left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+#con4 .imgwrap {
+  width: 0px;
+  height: 0px;
+  /* background: #000; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transition: 0.4s ease-in-out;
+  /* transform: translate(-50%, -50%); */
+}
+
+#con4 .left.on .img1 {
+  width: 22%;
+  height: 53%;
+
+  top: 5%;
+  left: 5%;
+
+  border-radius: 50px 0px 0px 0px;
+  background: url(../img/brand_louisvuitton2.jpg) no-repeat center / cover;
+}
+#con4 .left.on .img2 {
+  width: 35%;
+  height: 24%;
+
+  top: 5%;
+  left: 28%;
+
+  background: url(../img/brand_louisvuitton3.jpg) no-repeat top / cover;
+}
+#con4 .left.on .img3 {
+  width: 31%;
+  height: 86%;
+
+  top: 5%;
+  left: 64%;
+
+  border-radius: 0px 50px 50px 0px;
+  background: url(../img/brand_louisvuitton1.jpg) no-repeat center / cover;
+}
+#con4 .left.on .img4 {
+  width: 35%;
+  height: 28%;
+
+  top: 30%;
+  left: 28%;
+
+  background: url(../img/brand_louisvuitton5.jpg) no-repeat bottom / cover;
+}
+#con4 .left.on .img5 {
+  width: 58%;
+  height: 32%;
+
+  top: 59%;
+  left: 5%;
+
+  border-radius: 0px 0px 0px 50px;
+  background: url(../img/brand_louisvuitton4.jpg) no-repeat top / cover;
+}
+
+/* con4 right */
+#con4 .right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+
+  position: relative;
+}
+#con4 .txt {
+  width: 70%;
+  /* height: 50%; */
+
+  position: absolute;
+  top: 10%;
+}
+#con4 h2 {
+  color: #ffe676;
+
+  font-family: "SBAggroB";
+  font-size: 40px;
+  overflow: hidden;
+
+  margin-bottom: 20px;
+
+  transition-delay: 0.5s;
+}
+#con4 h2 span {
+  transform: translateY(100%);
+  display: block;
+  transition: 1s;
+  opacity: 0;
+}
+#con4 .right.on h2 span {
+  transform: translateY(0%);
+  opacity: 1;
+}
+#con4 .line {
+  width: 0%;
+  height: 3px;
+  background: #ffe676;
+  display: block;
+
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+#con4 .right.on .line {
+  width: 100%;
+}
+
+#con4 p {
+  color: #fadc59;
+  font-size: 20px;
+  line-height: 30px;
+
+  margin-top: 50px;
+  padding: 0px 30px;
+}
+#con4 .right p span {
+  transition: 0.8s;
+  transform: translateY(100%);
+  opacity: 0;
+  display: block;
+}
+#con4 .right.on p span {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* colorbox */
+#con4 ul {
+  position: absolute;
+  bottom: 15%;
+  padding: 0px 30px;
+  display: flex;
+  gap: 1vw;
+}
+#con4 ul li {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 1vw;
+}
+#con4 .box1 {
+  background: #fadc59;
+}
+#con4 .box2 {
+  background: #f09723;
+}
+#con4 .box3 {
+  background: #9c4512;
+}
+#con4 .box4 {
+  background: #92250a;
+}
