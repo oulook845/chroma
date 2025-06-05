@@ -394,10 +394,10 @@ $(function () {
   var pos2 = $("#con1").offset().top + baseLine;
   var pos3 = $("#con2").offset().top + baseLine;
   var pos4 = $("#con3").offset().top + baseLine;
-  console.log(pos1);
-  console.log(pos2);
-  console.log(pos3);
-  console.log(pos4);
+  // console.log(pos1);
+  // console.log(pos2);
+  // console.log(pos3);
+  // console.log(pos4);
   $(window).on("scroll", function () {
     var scroll = $(this).scrollTop();
     if (scroll < pos1) {
