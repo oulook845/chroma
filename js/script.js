@@ -2,8 +2,6 @@ $(document).ready(function () {
   // $("#header .barinner").click(function () {
   //   $("#header .barinner").toggleClass("on");
   // });
-  
-  
 
   // mbbox
   $("#header .menubar").click(function () {
@@ -205,24 +203,16 @@ $(document).ready(function () {
       });
       if (j == 0) {
         $(".right h2").text("2024 COLOR TRENDS PALETTE");
-        $(".right p").text(
-          "2024 COLOR TRENDS PALETTE 2024 COLOR TRENDS PALETTE 2024 COLOR TRENDS PALETTE"
-        );
+        $(".right p").text("2024 COLOR TRENDS PALETTE 2024 COLOR TRENDS PALETTE 2024 COLOR TRENDS PALETTE");
       } else if (j == 1) {
         $(".right h2").text("2023 COLOR TRENDS PALETTE");
-        $(".right p").text(
-          "2023 COLOR TRENDS PALETTE 2023 COLOR TRENDS PALETTE 2023 COLOR TRENDS PALETTE"
-        );
+        $(".right p").text("2023 COLOR TRENDS PALETTE 2023 COLOR TRENDS PALETTE 2023 COLOR TRENDS PALETTE");
       } else if (j == 2) {
         $(".right h2").text("2022 COLOR TRENDS PALETTE");
-        $(".right p").text(
-          "2022 COLOR TRENDS PALETTE 2022 COLOR TRENDS PALETTE 2022 COLOR TRENDS PALETTE"
-        );
+        $(".right p").text("2022 COLOR TRENDS PALETTE 2022 COLOR TRENDS PALETTE 2022 COLOR TRENDS PALETTE");
       } else if (j == 3) {
         $(".right h2").text("2021 COLOR TRENDS PALETTE");
-        $(".right p").text(
-          "2021 COLOR TRENDS PALETTE 2021 COLOR TRENDS PALETTE 2021 COLOR TRENDS PALETTE"
-        );
+        $(".right p").text("2021 COLOR TRENDS PALETTE 2021 COLOR TRENDS PALETTE 2021 COLOR TRENDS PALETTE");
       }
     });
   }
@@ -308,22 +298,18 @@ $(document).ready(function () {
       $(this).addClass("on");
     });
 
- 
-
-  
   //
-//visual svg
+  //visual svg
 
-  setTimeout(function(){
-  $("#visual .wrap").css({display:"flex"})
-},1000)
+  setTimeout(function () {
+    $("#visual .wrap").css({ display: "flex" });
+  }, 1000);
 
-setTimeout(function () {
-  $(".wrap .c2").addClass("on");
-  
-}, 3300);  
-    
-let innerH2 = $(".visual_text h2");
+  setTimeout(function () {
+    $(".wrap .c2").addClass("on");
+  }, 3300);
+
+  let innerH2 = $(".visual_text h2");
   let i = -1;
   function up() {
     if (i < 10) {
@@ -336,137 +322,131 @@ let innerH2 = $(".visual_text h2");
       i++;
     }
   }
-  setTimeout(function(){
-    $("#visual .wrap").css({transform:"translateX(-72%)",transition:"1.5s"})
+  setTimeout(function () {
+    $("#visual .wrap").css({ transform: "translateX(-72%)", transition: "1.5s" });
     title = setInterval(up, 200);
-  },4200)
+  }, 4200);
 
+  // var elm = ".move";
+  // $(elm).each(function (index) {
+  //   // 개별적으로 Wheel 이벤트 적용
+  //   $(this).on("mousewheel DOMMouseScroll", function (e) {
+  //     e.preventDefault();
+  //     var delta = 0;
+  //     if (index % 2 === 1) {
+  //       setTimeout(function () {
+  //         $("header a").css({ color: "white", transition: "0.5s" });
+  //         $("#header h1 img").css({ filter: "invert(1)", transition: "0.5s" });
+  //         $("#header ul li a span").css({
+  //           background: "#fff",
+  //           transition: "0.5s",
+  //         });
+  //         $("#header .menubar .barinner p").css({
+  //           background: "#fff",
+  //           transition: "0.5s",
+  //         });
+  //       }, 500);
+  //     } else {
+  //       setTimeout(function () {
+  //         $("header a").css({ color: "black", transition: "0.5s" });
+  //         $("#header h1 img").css({ filter: "invert(0)", transition: "0.5s" });
+  //         $("#header ul li a span").css({
+  //           background: "#000",
+  //           transition: "0.5s",
+  //         });
+  //         $("#header .menubar .barinner p").css({
+  //           background: "#000",
+  //           transition: "0.5s",
+  //         });
+  //       }, 500);
+  //     }
 
+  //     if (!event) event = window.event;
+  //     if (event.wheelDelta) {
+  //       delta = event.wheelDelta / 120;
+  //       if (window.opera) delta = -delta;
+  //     } else if (event.detail) delta = -event.detail / 3;
+  //     var moveTop = $(window).scrollTop();
+  //     var elmSelecter = $(elm).eq(index);
+  //     // 마우스휠을 위에서 아래로
+  //     if (delta < 0) {
+  //       if ($(elmSelecter).next() != undefined) {
+  //         try {
+  //           moveTop = $(elmSelecter).next().offset().top;
+  //         } catch (e) {}
+  //       }
+  //       // 마우스휠을 아래에서 위로
+  //     } else {
+  //       if ($(elmSelecter).prev() != undefined) {
+  //         try {
+  //           moveTop = $(elmSelecter).prev().offset().top;
+  //         } catch (e) {}
+  //       }
+  //     }
 
-
-  var elm = ".move";
-  $(elm).each(function (index) {
-      // 개별적으로 Wheel 이벤트 적용
-      $(this).on("mousewheel DOMMouseScroll", function (e) {
-          e.preventDefault();
-          var delta = 0;
-          if (index % 2 === 1) {
-            setTimeout(function(){
-              $("header a").css({ color: "white", transition: "0.5s" });
-              $("#header h1 img").css({ filter: "invert(1)", transition: "0.5s" });
-              $("#header ul li a span").css({
-                background: "#fff",
-                transition: "0.5s",
-              });
-              $("#header .menubar .barinner p").css({
-                background: "#fff",
-                transition: "0.5s",
-              });
-            },500)
-            
-   } else {
-    setTimeout(function(){
-     $("header a").css({ color: "black", transition: "0.5s" });
-     $("#header h1 img").css({ filter: "invert(0)", transition: "0.5s" });
-     $("#header ul li a span").css({
-       background: "#000",
-       transition: "0.5s",
-     });
-     $("#header .menubar .barinner p").css({
-       background: "#000",
-       transition: "0.5s",
-     });
-    },500)
-   }
+  //     // 화면 이동 0.8초(800)
+  //     $("html,body")
+  //       .stop()
+  //       .animate(
+  //         {
+  //           scrollTop: moveTop + "px",
+  //         },
+  //         {
+  //           duration: 800,
+  //           complete: function () {},
+  //         }
+  //       );
+  //   });
+  // });
   
-       
-          
-
-          if (!event) event = window.event;
-          if (event.wheelDelta) {
-              delta = event.wheelDelta / 120;
-              if (window.opera) delta = -delta;
-          } 
-          else if (event.detail)
-              delta = -event.detail / 3;
-          var moveTop = $(window).scrollTop();
-          var elmSelecter = $(elm).eq(index);
-          // 마우스휠을 위에서 아래로
-          if (delta < 0) {
-              if ($(elmSelecter).next() != undefined) {
-                  try{
-                      moveTop = $(elmSelecter).next().offset().top;
-                  }catch(e){}
-              }
-          // 마우스휠을 아래에서 위로
-          } else {
-              if ($(elmSelecter).prev() != undefined) {
-                  try{
-                      moveTop = $(elmSelecter).prev().offset().top;
-                  }catch(e){}
-              }
-          }
-           
-          // 화면 이동 0.8초(800)
-          $("html,body").stop().animate({
-              scrollTop: moveTop + 'px'
-          }, {
-              duration: 800, complete: function () {
-              }
-          });
-      });
+  let randomColor = [
+    "#f3958e",
+    "#ffebe4",
+    "#ba7765",
+    "#7b6060",
+    "#bba04f",
+    "#d7ced1",
+    "#334075",
+    "#246d74",
+    "#e4e0d5",
+    "#f0f1eb",
+    "#d3d4cc",
+    "#353334",
+    "#f57a6e",
+    "#f88d97",
+    "#d2393e",
+    "#753d3c",
+    "#c9e881",
+    "#96b3de",
+    "#ffc428",
+    "#ac9041",
+    "#814a7e",
+    "#00b5d7",
+    "#c4b396",
+    "#4c4f47",
+    "#dad9db",
+    "#e3dac2",
+    "#64676a",
+    "#da997d",
+    "#dacab1",
+    "#f5e0b1",
+    "#e7e3d8",
+    "#a7b2b6",
+    "#5b3532",
+    "#44474c",
+    "#a58f7a",
+    "#99b6b2",
+  ];
+  let changeI = 0;
+  $("#con1 .col_pop").on("mouseenter", function () {
+    changeI++;
+    $(this).css({ border: "1px solid white", transition: "0.5s" });
+    $("#con1 .col_pop .fill").css({ background: randomColor[changeI] });
+    if (changeI == 30) {
+      changeI = 0;
+    }
   });
-  let randomColor = ["#f3958e",
-  "#ffebe4",
-  "#ba7765",
-  "#7b6060",
-  "#bba04f",
-  "#d7ced1",
-  "#334075",
-  "#246d74",
-  "#e4e0d5",
-  "#f0f1eb",
-  "#d3d4cc",
-  "#353334",
-  "#f57a6e",
-  "#f88d97",
-  "#d2393e",
-  "#753d3c",
-  "#c9e881",
-  "#96b3de",
-  "#ffc428",
-  "#ac9041",
-  "#814a7e",
-  "#00b5d7",
-  "#c4b396",
-  "#4c4f47",
-  "#dad9db",
-  "#e3dac2",
-  "#64676a",
-  "#da997d",
-  "#dacab1",
-  "#f5e0b1",
-  "#e7e3d8",
-  "#a7b2b6",
-  "#5b3532",
-  "#44474c",
-  "#a58f7a",
-  "#99b6b2",]
-let changeI = 0
-$("#con1 .col_pop").on('mouseenter',function(){
-  changeI++
-  $(this).css({border:"1px solid white",transition:"0.5s"})
-  $("#con1 .col_pop .fill").css({background: randomColor[changeI] })
-  if(changeI==30){
-    changeI=0
-  }
-})
-$("#con1 .col_pop").on('mouseleave',function(){
-  $(this).css({border:"1px solid black",transition:"0.5s"})
-})
-  
-
-  
-
+  $("#con1 .col_pop").on("mouseleave", function () {
+    $(this).css({ border: "1px solid black", transition: "0.5s" });
   });
-
+});
